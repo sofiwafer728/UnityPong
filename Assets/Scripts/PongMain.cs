@@ -55,10 +55,12 @@ public class PongMain : MonoBehaviour {
 	{
 		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 		if(other.name.Contains("P1")){
+			//Reinicia del lado del jugador 2
 			transform.position = new Vector2(3.0f,0);
 			RunBall(Vector2.right);
 		}
 		else {
+			//Reinicia del lado del jugador 1
 			transform.position = new Vector2(-3.0f,0);
 			RunBall(Vector2.left);
 		}
